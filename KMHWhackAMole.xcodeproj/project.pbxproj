@@ -58,14 +58,11 @@
 		1FBB86ED1DFDEE9E004867C2 /* KMHWhackAMole */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB86FA1DFDEE9E004867C2 /* Assets.xcassets */,
 				1FBB86F11DFDEE9E004867C2 /* AppDelegate.h */,
 				1FBB86F21DFDEE9E004867C2 /* AppDelegate.m */,
-				1FBB86F41DFDEE9E004867C2 /* ViewController.h */,
-				1FBB86F51DFDEE9E004867C2 /* ViewController.m */,
-				1FBB86F71DFDEE9E004867C2 /* Main.storyboard */,
-				1FBB86FA1DFDEE9E004867C2 /* Assets.xcassets */,
-				1FBB86FC1DFDEE9E004867C2 /* LaunchScreen.storyboard */,
-				1FBB86FF1DFDEE9E004867C2 /* Info.plist */,
+				1FBB87051DFDEEED004867C2 /* Storyboards */,
+				1FBB87061DFDEFC4004867C2 /* View Controllers */,
 				1FBB86EE1DFDEE9E004867C2 /* Supporting Files */,
 			);
 			path = KMHWhackAMole;
@@ -74,9 +71,36 @@
 		1FBB86EE1DFDEE9E004867C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB86FF1DFDEE9E004867C2 /* Info.plist */,
 				1FBB86EF1DFDEE9E004867C2 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FBB87051DFDEEED004867C2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB86FC1DFDEE9E004867C2 /* LaunchScreen.storyboard */,
+				1FBB86F71DFDEE9E004867C2 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1FBB87061DFDEFC4004867C2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB87071DFDEFCC004867C2 /* ViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1FBB87071DFDEFCC004867C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB86F41DFDEE9E004867C2 /* ViewController.h */,
+				1FBB86F51DFDEE9E004867C2 /* ViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +326,7 @@
 				1FBB87041DFDEE9E004867C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
