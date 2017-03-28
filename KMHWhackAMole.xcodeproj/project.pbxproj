@@ -10,6 +10,10 @@
 		1FBB86F01DFDEE9E004867C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB86EF1DFDEE9E004867C2 /* main.m */; };
 		1FBB86F31DFDEE9E004867C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB86F21DFDEE9E004867C2 /* AppDelegate.m */; };
 		1FBB86FB1DFDEE9E004867C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB86FA1DFDEE9E004867C2 /* Assets.xcassets */; };
+		1FBB87261DFDFD7F004867C2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB87241DFDFD7F004867C2 /* Launch Screen.storyboard */; };
+		1FBB87271DFDFD7F004867C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB87251DFDFD7F004867C2 /* Main.storyboard */; };
+		1FBB87291DFDFD86004867C2 /* KMHBoardViewController_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB87281DFDFD86004867C2 /* KMHBoardViewController_Tests.m */; };
+		1FBB872E1DFE15D9004867C2 /* KMHBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB872D1DFE15D9004867C2 /* KMHBoardViewController.m */; };
 		818BDE4D75B02B189FA6ACF0 /* Pods_KMHWhackAMoleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086B7E20262956C1E0F99A57 /* Pods_KMHWhackAMoleTests.framework */; };
 		EB70F3B51D5FEE7D1B330EB2 /* Pods_KMHWhackAMole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC36C0BF0742A920B065293 /* Pods_KMHWhackAMole.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +39,12 @@
 		1FBB86FF1DFDEE9E004867C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBB870C1DFDF1D2004867C2 /* KMHWhackAMoleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMHWhackAMoleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBB87101DFDF1D2004867C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FBB87241DFDFD7F004867C2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1FBB87251DFDFD7F004867C2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1FBB87281DFDFD86004867C2 /* KMHBoardViewController_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHBoardViewController_Tests.m; sourceTree = "<group>"; };
+		1FBB872C1DFE15D9004867C2 /* KMHBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHBoardViewController.h; sourceTree = "<group>"; };
+		1FBB872D1DFE15D9004867C2 /* KMHBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHBoardViewController.m; sourceTree = "<group>"; };
+		1FBB87331DFE1CE5004867C2 /* BoardUI_Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardUI_Protocols.h; sourceTree = "<group>"; };
 		3713362479B4A3D9416AC25D /* Pods-KMHWhackAMole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMHWhackAMole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KMHWhackAMole/Pods-KMHWhackAMole.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC36C0BF0742A920B065293 /* Pods_KMHWhackAMole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMHWhackAMole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B053AC6537EB4AFCC1D58902 /* Pods-KMHWhackAMoleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMHWhackAMoleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KMHWhackAMoleTests/Pods-KMHWhackAMoleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +97,8 @@
 				1FBB86FA1DFDEE9E004867C2 /* Assets.xcassets */,
 				1FBB86F11DFDEE9E004867C2 /* AppDelegate.h */,
 				1FBB86F21DFDEE9E004867C2 /* AppDelegate.m */,
+				1FBB87231DFDFD6F004867C2 /* Storyboards */,
+				1FBB872A1DFE156A004867C2 /* View Controllers */,
 				1FBB86EE1DFDEE9E004867C2 /* Supporting Files */,
 			);
 			path = KMHWhackAMole;
@@ -104,9 +116,53 @@
 		1FBB870D1DFDF1D2004867C2 /* KMHWhackAMoleTests */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB87281DFDFD86004867C2 /* KMHBoardViewController_Tests.m */,
 				1FBB87101DFDF1D2004867C2 /* Info.plist */,
 			);
 			path = KMHWhackAMoleTests;
+			sourceTree = "<group>";
+		};
+		1FBB87231DFDFD6F004867C2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB87241DFDFD7F004867C2 /* Launch Screen.storyboard */,
+				1FBB87251DFDFD7F004867C2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1FBB872A1DFE156A004867C2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB872F1DFE16AD004867C2 /* Protocols */,
+				1FBB872B1DFE1573004867C2 /* KMHBoardViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1FBB872B1DFE1573004867C2 /* KMHBoardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB872C1DFE15D9004867C2 /* KMHBoardViewController.h */,
+				1FBB872D1DFE15D9004867C2 /* KMHBoardViewController.m */,
+			);
+			path = KMHBoardViewController;
+			sourceTree = "<group>";
+		};
+		1FBB872F1DFE16AD004867C2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB87321DFE1CC0004867C2 /* Board Protocols */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1FBB87321DFE1CC0004867C2 /* Board Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB87331DFE1CE5004867C2 /* BoardUI_Protocols.h */,
+			);
+			path = "Board Protocols";
 			sourceTree = "<group>";
 		};
 		7A247FEAAF901E910E26C547 /* Frameworks */ = {
@@ -215,6 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBB87271DFDFD7F004867C2 /* Main.storyboard in Resources */,
+				1FBB87261DFDFD7F004867C2 /* Launch Screen.storyboard in Resources */,
 				1FBB86FB1DFDEE9E004867C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBB86F31DFDEE9E004867C2 /* AppDelegate.m in Sources */,
+				1FBB872E1DFE15D9004867C2 /* KMHBoardViewController.m in Sources */,
 				1FBB86F01DFDEE9E004867C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBB87291DFDFD86004867C2 /* KMHBoardViewController_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
